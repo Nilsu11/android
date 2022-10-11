@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="android/default.xml" />
-  <include name="remove.xml" />
+<project path="packages/apps/OmniClock" name="android_packages_apps_OmniClock" remote="omnirom" revision="android-10" />
 </manifest>
