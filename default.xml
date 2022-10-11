@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <include name="android/default.xml" />
-  <include name="android/snippets/remove.xml" />
-  <include name="android/snippets/lineage.xml" />
-  <include name="android/snippets/custom.xml" />
-  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
-</manifest>
