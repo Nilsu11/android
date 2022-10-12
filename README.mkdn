@@ -26,7 +26,7 @@ Intention
 ---------
 The intention of this ROM is only having one file around and automation while cherry-picking features without having to maintain the code.
 
-#Resposeability
+Resposeability
 --------------
 I'm not responseable for any kind damage caused by or while following the instruction or starting the .sh file.
 ===============================================================================================================
