@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <remote  name="omnirom"
-           fetch="https://github.com/omnirom"
-           review="gerrit.omnirom.org" />
-  <project path="packages/apps/OmniClock" name="android_packages_apps_OmniClock" remote="omnirom" revision="android-10" />
-</manifest>
