@@ -5,17 +5,19 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 cd ~/android/lineage
 git clone https://github.com/LineageOS/android.git
-echo '<?xml version="1.0" encoding="UTF-8"?>' >> r.xml
-echo '<manifest>' >> r.xml
-echo '  <include name="android/default.xml" />' >> r.xml
-echo '  <include name="packages.xml" />' >> r.xml
-echo '  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />' >> r.xml
-echo '</manifest>' >> r.xml
+echo '<?xml version="1.0" encoding="UTF-8"?>' >> default.xml
+echo '<manifest>' >> default.xml
+echo '  <include name="android/default.xml" />' >> default.xml
+echo '  <include name="packages.xml" />' >> default.xml
+echo '  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />' >> default.xml
+echo '</manifest>' >> default.xml
 echo '<?xml version="1.0" encoding="UTF-8"?>' >> packages.xml
 echo '<manifest>' >> packages.xml
 echo '  <remote  name="omnirom"' >> packages.xml
-echo '           fetch="https://github.com/omnirom"' >> packages.xml
+echo '           fetch="https://github.com/"' >> packages.xml
 echo '           review="gerrit.omnirom.org" />' >> packages.xml
 echo '  <remove-project name="platform/packages/apps/DeskClock" />' >> packages.xml
-echo '  <project path="packages/apps/OmniClock" name="android_packages_apps_OmniClock" remote="omnirom" revision="android-10" />' >> packages.xml
+echo '  <project path="packages/apps/OmniClock" name="Nilsu11/android_packages_apps_OmniClock" remote="omnirom" revision="10" />' >> packages.xml
 echo '</manifest>' >> packages.xml
+repo init -u file://$pwd
+repo sync
