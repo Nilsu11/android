@@ -21,3 +21,7 @@ echo '  <project path="packages/apps/OmniClock" name="Nilsu11/android_packages_a
 echo '</manifest>' >> packages.xml
 repo init -u file://$pwd
 repo sync
+# TODO:
+# echo own .mk in vendor
+# include own .mk
+# add more apps
