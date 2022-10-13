@@ -18,6 +18,11 @@ echo '           fetch="https://github.com/"' >> packages.xml
 echo '  <remove-project name="platform/packages/apps/DeskClock" />' >> packages.xml
 echo '  <project path="packages/apps/OmniClock" name="Nilsu11/android_packages_apps_OmniClock" remote="me" revision="10" />' >> packages.xml
 echo '</manifest>' >> packages.xml
+echo 'PRODUCT_PACKAGES += \' >> rainloop.mk
+echo 'OmniClockOSS \' >> rainloop.mk
+echo '' >> rainloop.mk
+echo '' >> rainloop.mk
+echo '' >> rainloop.mk
 repo init -u file://$pwd
 repo sync
 # TODO:
