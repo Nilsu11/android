@@ -10,7 +10,7 @@ git clone https://github.com/Nilsu11/android.git
 sh rainloop.sh
 ```
 Please see the steps on the crdroid or lineageos website from Prepare the device-specific code, by device.
-                                                                      ------------------------
+
 
 Submitting patches
 ------------------
@@ -19,7 +19,8 @@ Patches are always welcome! Please submit your patches by opening a Merge Reques
 
 Intention
 ---------
-The intention of this ROM is only having one file around and automation while cherry-picking features without having to maintain the code.
+The intention of this ROM is only having one file around and automation while cherry-picking features without having to maintain the code or builds.
+
 
 Resposeability
 --------------
