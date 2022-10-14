@@ -17,14 +17,18 @@ echo '  <remote  name="me"' >> packages.xml
 echo '           fetch="https://github.com/"' >> packages.xml
 echo '  <remove-project name="platform/packages/apps/DeskClock" />' >> packages.xml
 echo '  <project path="packages/apps/OmniClock" name="Nilsu11/android_packages_apps_OmniClock" remote="me" revision="10" />' >> packages.xml
+echo '  <project path="packages/apps/ThemeChooser" name="CyanogenMod/android_packages_apps_ThemeChooser" remote="me" revision="cm-14.1" />' >> packages.xml
+echo '  <project path="packages/providers/ThemesProvider" name="CyanogenMod/android_packages_providers_ThemesProvider" remote="me" revision="cm-14.1" />' >> packages.xml
+echo '  <project path="packages/services/ThemeManagerService" name="CyanogenMod/android_packages_services_ThemeManagerService" remote="me" revision="cm-14.1" />' >> packages.xml
 echo '</manifest>' >> packages.xml
 echo 'PRODUCT_PACKAGES += \' >> rainloop.mk
 echo 'OmniClockOSS \' >> rainloop.mk
-echo '' >> rainloop.mk
-echo '' >> rainloop.mk
-echo '' >> rainloop.mk
+echo 'ThemeChooser \' >> rainloop.mk
+echo 'ThemesProvider \' >> rainloop.mk
+echo 'ThemeManagerService' >> rainloop.mk
 repo init -u file://$pwd
 repo sync
+sed -i 's/org.cyanogenmod.platform.internal/org.lineageos.platform.internal/g' {file}
 # TODO:
 # echo own .mk in vendor
 # include own .mk
