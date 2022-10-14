@@ -4,18 +4,13 @@
 Getting started
 ---------------
 
-To get started with this ROM, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
-
-To initialize your local repository using the /e/ OS trees, use a command like this:
+Run these commands:
 ```
 git clone https://github.com/Nilsu11/android.git
-```
-Then to sync up:
-```
 sh rainloop.sh
 ```
-Please see the steps on the crdroid or lineageos website for building instructions, by device.
-
+Please see the steps on the crdroid or lineageos website from Prepare the device-specific code, by device.
+                                                                      ------------------------
 
 Submitting patches
 ------------------
